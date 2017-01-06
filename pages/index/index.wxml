@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container" wx:if="{{!netStateBean.contentHidden}}">
+
+
+  哈哈哈哈,我是内容content
+</view>
+
+<import src="../../pageManager/pageManager.wxml"/>
+<view class="pageStateWrapper" wx:if="{{netStateBean.contentHidden}}">
+  <template is="pagestate" data="{{...netStateBean}}"/>
+</view>
